@@ -8,7 +8,7 @@
  */
 package com.mousezhang.code;
 
-/** 饥饿式单例类 */
+/** 饥汉模式 */
 public class Java02_01_SingletonClass {
 	private static final Java02_01_SingletonClass instance = new Java02_01_SingletonClass();
 	//私有构造函数

@@ -8,12 +8,12 @@
  */
 package com.mousezhang.code;
 
-/** 懒汉式单例模式 */
+/** 线程安全的懒汉模式 */
 public class Java02_02_SingletonClass {
-	private static Java02_02_SingletonClass instance = null;
+	private static Java02_02_SingletonClass instance;
 	//私有构造函数
 	private Java02_02_SingletonClass(){}
-	public synchronized static Java02_02_SingletonClass getInstance() {
+	public static synchronized Java02_02_SingletonClass getInstance() {
 		if (instance == null) {
 			instance = new Java02_02_SingletonClass();
 		}
