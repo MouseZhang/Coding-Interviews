@@ -20,7 +20,7 @@ public class Java03_01_DuplicationInArray {
     // Return value:       true if the input is valid, and there are some duplications in the array number
     //                     otherwise false
     public boolean duplicate(int numbers[], int length, int[] duplication) {
-        if (numbers == null || length == 0) {
+        if (numbers == null || length <= 0) {
         	return false;
         }
         //条件判断，保证数组中的元素值在0～n-1的范围内
