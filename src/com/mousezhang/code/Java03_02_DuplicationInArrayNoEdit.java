@@ -14,35 +14,35 @@ package com.mousezhang.code;
 public class Java03_02_DuplicationInArrayNoEdit {
 	public int getDuplication(int[] numbers, int length){
 		if (numbers == null || length <= 0)
-            return -1;
+			return -1;
 		//条件判断，保证数组中的元素值在1～n的范围内
-        for (int i = 0; i < length; i++)
-            if (numbers[i] < 1 || numbers[i] > length-1)
-                return -1;
+		for (int i = 0; i < length; i++)
+			if (numbers[i] < 1 || numbers[i] > length-1)
+				return -1;
         
-        int start = 1;
-        int end = length-1;
-        while (start <= end){
-            int middle = (start + end) / 2;
-            int count = 0;
-            //对范围内的元素个数进行计数
-            for (int i = 0; i < length; i++) {
-                if(numbers[i] <= middle && numbers[i] >= start)
-                    count++;
+		int start = 1;
+		int end = length-1;
+		while (start <= end){
+			int middle = (start + end) / 2;
+			int count = 0;
+			//对范围内的元素个数进行计数
+			for (int i = 0; i < length; i++) {
+				if(numbers[i] <= middle && numbers[i] >= start)
+					count++;
             }
-            if (start == end) {
-                if (count > 1)
-                    return start;
-                else 
-                    break;
+			if (start == end) {
+				if (count > 1)
+					return start;
+				else 
+					break;
             }
-            // 根据检测情况调整会出现重复的整数范围
-            if (count > middle - start + 1)
-            	end = middle;
-            else
-            	start = middle + 1;
+			// 根据检测情况调整会出现重复的整数范围
+			if (count > middle - start + 1)
+				end = middle;
+			else
+				start = middle + 1;
         }
-        return -1;
+		return -1;
     }
 }
 
