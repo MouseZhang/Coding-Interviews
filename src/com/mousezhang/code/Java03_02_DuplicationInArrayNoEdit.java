@@ -13,9 +13,9 @@ package com.mousezhang.code;
 
 public class Java03_02_DuplicationInArrayNoEdit {
 	public int getDuplication(int[] numbers, int length){
-        if (numbers == null || length <= 0)
+		if (numbers == null || length <= 0)
             return -1;
-      //条件判断，保证数组中的元素值在1～n的范围内
+		//条件判断，保证数组中的元素值在1～n的范围内
         for (int i = 0; i < length; i++)
             if (numbers[i] < 1 || numbers[i] > length-1)
                 return -1;
