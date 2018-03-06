@@ -35,10 +35,10 @@ public class Java04_FindInPartiallySortedMatrix {
     }
     
     public static void main(String[] args) {
-		int[][] testArray = new int[4][4];
-		testArray[0][0] = 1;
-		testArray[0][1] = 2;
-		testArray[0][2] = 8;
+    	int[][] testArray = new int[4][4];
+    	testArray[0][0] = 1;
+    	testArray[0][1] = 2;
+    	testArray[0][2] = 8;
 		testArray[0][3] = 9;
 		testArray[1][0] = 2;
 		testArray[1][1] = 4;
@@ -55,5 +55,4 @@ public class Java04_FindInPartiallySortedMatrix {
 		System.out.println(Find(testArray, 1));
 		System.out.println(Find(testArray, 7));
 	}
-    
 }
