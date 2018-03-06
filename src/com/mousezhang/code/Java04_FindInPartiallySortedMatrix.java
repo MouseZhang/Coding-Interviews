@@ -35,24 +35,30 @@ public class Java04_FindInPartiallySortedMatrix {
     }
     
     public static void main(String[] args) {
+    	/*
+    	 * 1 2 8 9
+    	 * 2 4 9 12
+    	 * 4 7 10 13
+    	 * 6 8 11 15
+    	 */
     	int[][] testArray = new int[4][4];
     	testArray[0][0] = 1;
     	testArray[0][1] = 2;
     	testArray[0][2] = 8;
-		testArray[0][3] = 9;
-		testArray[1][0] = 2;
-		testArray[1][1] = 4;
-		testArray[1][2] = 9;
-		testArray[1][3] = 12;
-		testArray[2][0] = 4;
-		testArray[2][1] = 7;
-		testArray[2][2] = 10;
-		testArray[2][3] = 13;
-		testArray[3][0] = 6;
-		testArray[3][1] = 8;
-		testArray[3][2] = 11;
-		testArray[3][3] = 15;
-		System.out.println(Find(testArray, 1));
-		System.out.println(Find(testArray, 7));
+    	testArray[0][3] = 9;
+    	testArray[1][0] = 2;
+    	testArray[1][1] = 4;
+    	testArray[1][2] = 9;
+    	testArray[1][3] = 12;
+    	testArray[2][0] = 4;
+    	testArray[2][1] = 7;
+    	testArray[2][2] = 10;
+    	testArray[2][3] = 13;
+    	testArray[3][0] = 6;
+    	testArray[3][1] = 8;
+    	testArray[3][2] = 11;
+    	testArray[3][3] = 15;
+    	System.out.println(Find(testArray, 1));
+    	System.out.println(Find(testArray, 7));
 	}
 }
