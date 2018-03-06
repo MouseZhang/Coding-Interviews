@@ -9,10 +9,10 @@
  */
 package com.mousezhang.code;
 
-public class Java05_ReplaceSpaces {
+public class Java05_01_ReplaceSpaces {
 	public String replaceSpace(StringBuffer str) {
 		StringBuffer outputBuffer = new StringBuffer();
-		if (str == null || str.length() == 0)
+		if (str == null)
 			return null;
 		for (int i = 0; i < str.length(); i++) {
 			if (str.charAt(i) == ' ') {
@@ -29,7 +29,7 @@ public class Java05_ReplaceSpaces {
 	
 	//测试用例
 	public static void main(String[] args) {
-		Java05_ReplaceSpaces testString = new Java05_ReplaceSpaces();
+		Java05_01_ReplaceSpaces testString = new Java05_01_ReplaceSpaces();
 		//输入的字符串包含空格在：最后面，最前面，中间，连续空格和无空格
 		StringBuffer str1 = new StringBuffer("We are happy.");
 		StringBuffer str2 = new StringBuffer(" Wearehappy.");
