@@ -35,12 +35,6 @@ public class Java04_FindInPartiallySortedMatrix {
     }
     
     public static void main(String[] args) {
-    	/*
-    	 * 1 2 8 9
-    	 * 2 4 9 12
-    	 * 4 7 10 13
-    	 * 6 8 11 15
-    	 */
 		int[][] testArray = new int[4][4];
 		testArray[0][0] = 1;
 		testArray[0][1] = 2;
