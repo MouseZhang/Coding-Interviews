@@ -3,12 +3,12 @@
  * // 《剑指Offer——名企面试官精讲典型编程题》代码
  * //
  * //==================================================================
- * // 面试题10：斐波那契数列
+ * // 面试题10（一）：斐波那契数列
  * // 题目：写一个函数，输入n，求斐波那契（Fibonacci）数列的第n项。
  */
 package com.mousezhang.code;
 
-public class Java10_Fibonacci {
+public class Java10_01_Fibonacci {
 	//解法1：用递归解决，存在很严重的效率问题，做了很多次重复的计算
 	public int Fib1(int n) {
 		if (n == 0) {
