@@ -10,6 +10,12 @@
 package com.mousezhang.code;
 
 public class Java15_02_NumberOf1InBinary {
+	/**
+	 * 把一个整数减1，再和原整数做位与运算，会把该整数最右边一个1变成0
+	 * 一个整数的二进制表示有多少个1，就可以进行多少次这样的操作
+	 * @param n
+	 * @return
+	 */
     public int NumberOf1(int n) {
         int count = 0;
         while(n != 0){
