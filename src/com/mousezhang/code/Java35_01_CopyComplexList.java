@@ -13,7 +13,7 @@ import java.util.HashMap;
 
 public class Java35_01_CopyComplexList {
 	/** 使用hashMap映射原链表，牺牲O(N)空间换时间 */
-    public RandomListNode Clone(RandomListNode pHead) {
+	public RandomListNode Clone(RandomListNode pHead) {
 		if (pHead == null) {
 		    return null;
 		}
