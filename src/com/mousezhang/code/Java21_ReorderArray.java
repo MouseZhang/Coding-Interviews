@@ -11,12 +11,12 @@ package com.mousezhang.code;
 
 public class Java21_ReorderArray {
 	public void reOrderArray(int [] array) {
-    	int length = array.length;
-    	if (length == 0) {
-            return;
-        }
-    	int[] des = new int[length];
-    	MergeSort(array, des, 0, length - 1);
+		int length = array.length;
+		if (length == 0) {
+	        return;
+	    }
+		int[] des = new int[length];
+		MergeSort(array, des, 0, length - 1);
     }
     
 	public void MergeSort(int[] array, int[] des, int start, int end) {
