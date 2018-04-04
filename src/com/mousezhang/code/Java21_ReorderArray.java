@@ -19,33 +19,33 @@ public class Java21_ReorderArray {
     	MergeSort(array, des, 0, length - 1);
     }
     
-    public void MergeSort(int[] array, int[] des, int start, int end) {
-        if (start < end) {
-            int middle = (start + end) / 2;
-            MergeSort(array, des, start, middle);
-            MergeSort(array, des, middle + 1, end);
-            Merge(array, des, start, middle, end);
-        }
-    }
+	public void MergeSort(int[] array, int[] des, int start, int end) {
+	    if (start < end) {
+	        int middle = (start + end) / 2;
+	        MergeSort(array, des, start, middle);
+	        MergeSort(array, des, middle + 1, end);
+	        Merge(array, des, start, middle, end);
+	    }
+	}
     
-    public void Merge(int[] array, int[] des, int start, int middle, int end) {
-        int i = start;
-        int j = middle + 1;
-        int k = start;
-        while (i <= middle && array[i] % 2 == 1) {
-            des[k++] = array[i++];
-        }
-        while (j <= end && array[j] % 2 == 1) {
-            des[k++] = array[j++];
-        }
-        while (i <= middle) {
-            des[k++] = array[i++];
-        }
-        while (j <= end) {
-            des[k++] = array[j++];
-        }
-        for (int m = start; m <= end; m++) {
-            array[m] = des[m];
-        }
-    }
+	public void Merge(int[] array, int[] des, int start, int middle, int end) {
+	    int i = start;
+	    int j = middle + 1;
+	    int k = start;
+	    while (i <= middle && array[i] % 2 == 1) {
+	        des[k++] = array[i++];
+	    }
+	    while (j <= end && array[j] % 2 == 1) {
+	        des[k++] = array[j++];
+	    }
+	    while (i <= middle) {
+	        des[k++] = array[i++];
+	    }
+	    while (j <= end) {
+	        des[k++] = array[j++];
+	    }
+	    for (int m = start; m <= end; m++) {
+	        array[m] = des[m];
+	    }
+	}
 }
