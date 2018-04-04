@@ -10,13 +10,12 @@
 package com.mousezhang.code;
 
 public class Java28_SymmetricalBinaryTree {
-	boolean isSymmetrical(TreeNode pRoot)
-	{
+	public boolean isSymmetrical(TreeNode pRoot) {
 		return isSymmetrical(pRoot, pRoot);
 	}
 	
 	//定义两个遍历，一个前序遍历，一个是和前序遍历相反的，先右后左的遍历
-	boolean isSymmetrical(TreeNode pRoot1, TreeNode pRoot2) {
+	public boolean isSymmetrical(TreeNode pRoot1, TreeNode pRoot2) {
 	    if (pRoot1 == null && pRoot2 == null) {
 	        return true;
 	    }
