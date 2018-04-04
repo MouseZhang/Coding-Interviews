@@ -15,20 +15,24 @@ public class Java23_EntryNodeInListLoop {
 	    if (pHead == null || pHead.next == null) {
 	        return null;
 	    }
-	    ListNode n1 = pHead;    //走一步
-	    ListNode n2 = pHead;    //走两步
+	    //走一步
+	    ListNode n1 = pHead;  
+	    //走两步
+	    ListNode n2 = pHead;    
 	    ListNode n = null;
 	    while (n2 != null && n2.next != null) {
 	        n2 = n2.next.next;
 	        n1 = n1.next;
 	        if (n2 == n1) {
-	            n = n2;    //记录碰头结点
+	        	//记录碰头结点
+	            n = n2;    
 	            break;
 	        }
 	    }
 	    //求出环中结点数量
 	    int num = 0;
-	    ListNode temp = n;    //n的镜像
+	    //n的镜像
+	    ListNode temp = n;    
 	    do {
 	        temp = temp.next;
 	        num++;
