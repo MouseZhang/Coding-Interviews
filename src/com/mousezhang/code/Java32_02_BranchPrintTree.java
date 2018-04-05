@@ -25,7 +25,7 @@ public class Java32_02_BranchPrintTree {
 		int start = 0, end = 1;
 		while(!queue.isEmpty()){
 		    TreeNode cur = queue.remove();
-		  //添加本行打印的List里
+		    //添加本行打印的List里
 		    tempList.add(cur.val);
 		    start++;
 		    //每打印一个节点，就把此节点的下一层的左右节点加入队列，并记录下一层要打印的个数
