@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Queue;
 import java.util.LinkedList;
 
-public class Java32_PrintTreeFromTopToBottom {
+public class Java32_01_PrintTreeFromTopToBottom {
 	public ArrayList<Integer> PrintFromTopToBottom(TreeNode root) {
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		if (root == null) {
