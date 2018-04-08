@@ -10,14 +10,14 @@ package com.mousezhang.code;
 
 public class Java54_KthNodeInBST {
 	/** 中序遍历就是二叉搜索树的排序 */
-    TreeNode KthNode(TreeNode pRoot, int k) {
+	TreeNode KthNode(TreeNode pRoot, int k) {
 		if (pRoot == null || k <= 0){
 		    return null;
 		}
 		TreeNode[] result = new TreeNode[1];
 		KthNode(pRoot, k, new int[1], result);
 		return result[0];
-    }
+	}
     
     public void KthNode(TreeNode pRoot, int k, int[] count, TreeNode[] result){
     	if (result[0] != null || pRoot == null) {
