@@ -21,9 +21,9 @@ public class Java53_01_NumberOfK {
 		return num;
 	}
 
-	/*
-	 * 找到第一个k出现的数字的下标
-	 */
+    /*
+    * 找到第一个k出现的数字的下标
+    */
 	public int getFirstK(int[] array, int k, int start, int end) {
 		if (start > end) {
 			return -1;
@@ -48,9 +48,9 @@ public class Java53_01_NumberOfK {
 		return getFirstK(array, k, start, end);
 	}
 
-	/*
-	 * 找到最后一个k出现的数字的下标
-	 */
+    /*
+    * 找到最后一个k出现的数字的下标
+    */
 	public int getLastK(int array[], int k, int start, int end) {
 		if (start > end) {
 			return -1;
