@@ -14,7 +14,7 @@ public class Java56_01_NumbersAppearOnce {
 	//的结果。所以根据异或的结果1所在的最低位，把数字分成两半，每一半里都还有只出现一次的数据和成对出现的数据。
 	//这样继续对每一半相异或则可以分别求出两个只出现一次的数字。num1,num2分别为长度为1的数组。传出参数
 	//将num1[0],num2[0]设置为返回结果。
-	public static void FindNumsAppearOnce(int[] array, int num1[] , int num2[]) {
+	public static void FindNumsAppearOnce(int[] array, int[] num1, int[] num2) {
 		if (array == null || array.length <= 1) {
 		    num1[0] = num2[0] = 0;
 		    return;
