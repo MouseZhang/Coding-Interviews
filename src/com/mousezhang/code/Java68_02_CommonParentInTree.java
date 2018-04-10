@@ -38,25 +38,25 @@ public class Java68_02_CommonParentInTree {
 		return lca;  
 	}  
       
-    private boolean getPath(TreeNode root, TreeNode n, List<TreeNode> path) {  
-        if (root == n) {
+	private boolean getPath(TreeNode root, TreeNode n, List<TreeNode> path) {  
+		if (root == n) {
         	return true;
         }
-        if (root.left != null) {  
-            path.add(root.left);  
-            if (getPath(root.left, n, path)) {
-            	return true;  
-            }
-            path.remove(path.size() - 1);  
-        }
-          
-        if (root.right != null) {  
-            path.add(root.right);  
-            if (getPath(root.right, n, path)) {
-            	return true;  
-            }
-            path.remove(path.size()-1);  
-        }
-        return false;  
+		if (root.left != null) {  
+		    path.add(root.left);  
+		    if (getPath(root.left, n, path)) {
+		    	return true;  
+		    }
+		    path.remove(path.size() - 1);  
+		}
+		  
+		if (root.right != null) {  
+		    path.add(root.right);  
+		    if (getPath(root.right, n, path)) {
+		    	return true;  
+		    }
+		    path.remove(path.size()-1);  
+		}
+		return false;  
     }
 }
