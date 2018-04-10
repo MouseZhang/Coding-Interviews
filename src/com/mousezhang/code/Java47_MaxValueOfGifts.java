@@ -57,10 +57,10 @@ public class Java47_MaxValueOfGifts {
 		    	queue.offer(new Node(nodeCur.row+1, nodeCur.col, nodeCur.sum + data[nodeCur.row + 1][nodeCur.col]));
 		    }
 		    if (nodeCur.col != maxColIndex) {
-		    	queue.offer(new Node(nodeCur.row, nodeCur.col + 1,nodeCur.sum + data[nodeCur.row][nodeCur.col + 1]));
+		    	queue.offer(new Node(nodeCur.row, nodeCur.col + 1, nodeCur.sum + data[nodeCur.row][nodeCur.col + 1]));
 		    }
 		}
-		int maxSum = 0,temp = 0;
+		int maxSum = 0, temp = 0;
 		while (!queue.isEmpty()) {
 		    temp = queue.poll().sum;
 		    if(temp > maxSum) {
