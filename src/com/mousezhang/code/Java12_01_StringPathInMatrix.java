@@ -16,7 +16,7 @@
  */
 package com.mousezhang.code;
 
-public class Java12_StringPathInMatrix {
+public class Java12_01_StringPathInMatrix {
 	/**
 	 * 
 	 * @param matrix 输入矩阵
