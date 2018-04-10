@@ -21,19 +21,19 @@ public class Java49_UglyNumber {
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		result.add(1);
 		int i2 = 0, i3 = 0, i5 = 0;
-		while(result.size() < index) {
+		while (result.size() < index) {
 		    int m2 = result.get(i2) * 2;
 		    int m3 = result.get(i3) * 3;
 		    int m5 = result.get(i5) * 5;
 		    int min = Math.min(m2, Math.min(m3, m5));
 		    result.add(min);
-		    if(min == m2) {
+		    if (min == m2) {
 		        i2++;
 		    }
-		    if(min == m3) {
+		    if (min == m3) {
 		        i3++;
 		    }
-		    if(min == m5) {
+		    if (min == m5) {
 		        i5++;
 		    }
 		}
