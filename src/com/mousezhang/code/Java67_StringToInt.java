@@ -10,9 +10,9 @@
 package com.mousezhang.code;
 
 public class Java67_StringToInt {
-    //1、功能测试：输入有+-号情况，区分正负数和0 
-    //2、特殊输入：空字符串情况，输入非数字字符串情况，如a12 
-    //3、边界值：最大正整数和最小负整数溢出情况
+	//1、功能测试：输入有+-号情况，区分正负数和0 
+	//2、特殊输入：空字符串情况，输入非数字字符串情况，如a12 
+	//3、边界值：最大正整数和最小负整数溢出情况
 	public int StrToInt(String str) {
 		//空字符串情况
 		if (str.equals("") || str.length() == 0) {
@@ -25,7 +25,7 @@ public class Java67_StringToInt {
 		if (a[0] == '-') {
 			symbol = false;
 			//第一位如果是-号，则从第二位开始循环
-		    i = 1;
+			i = 1;
 		}           
 		int sum = 0;
 		for (; i < a.length; i++)
