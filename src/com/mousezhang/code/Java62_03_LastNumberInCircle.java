@@ -10,5 +10,15 @@
 package com.mousezhang.code;
 
 public class Java62_03_LastNumberInCircle {
-
+	/** 方法三：约瑟夫经典解法，O(N)，空间复杂度O(1) */
+	public int LastRemaining_Solution(int n, int m) {
+		if (n == 0) {
+			return -1;
+		}
+		int last = 0;
+		for (int i = 2; i<= n; i++){
+			last = (last + m) % i;
+		}
+		return last;
+	}
 }
