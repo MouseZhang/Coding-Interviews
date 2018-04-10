@@ -10,6 +10,7 @@
 package com.mousezhang.code;
 
 public class Java62_01_LastNumberInCircle {
+	/** 方法一：数组O(m*N) */
 	public int LastRemaining_Solution(int n, int m) {
 		if (n < 1 || m < 1) {
 			return -1;
