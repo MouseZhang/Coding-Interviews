@@ -28,12 +28,11 @@ public class Java67_StringToInt {
 			i = 1;
 		}           
 		int sum = 0;
-		for (; i < a.length; i++)
-		{
-		    if (a[i] == '+') {
-		    	continue;
+		for (; i < a.length; i++) {
+			if (a[i] == '+') {
+				continue;
 		    }
-		    if (a[i] < 48 || a[i] > 57) {
+			if (a[i] < 48 || a[i] > 57) {
 		    	//有非数字字符
 		        return 0;
 		    }
