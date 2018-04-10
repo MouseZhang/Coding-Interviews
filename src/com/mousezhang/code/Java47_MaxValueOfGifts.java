@@ -16,29 +16,29 @@ import java.util.Queue;
 public class Java47_MaxValueOfGifts {
 	//方法一：动态规划
 	public static int getMaxVaule(int[][] data){
-		if(data.length == 0|| data[0].length == 0) {
+		if(data.length == 0 || data[0].length == 0) {
 			return 0;
 		}
 		int[][] dp = new int[2][data[0].length];
 		int dpCurRowIndex = 0, dpPreRowIndex = 0;
-	    for (int row = 0; row < data.length; row++){
-	        dpCurRowIndex = row & 1;
-	        dpPreRowIndex = 1 - dpCurRowIndex;
-	        for (int col = 0; col < data[0].length; col++) {
-	            if (col == 0) {
-	            	dp[dpCurRowIndex][col] = dp[dpPreRowIndex][col] + data[row][col];
-	            }
-	            else {
-	                if (dp[dpPreRowIndex][col] >= dp[dpCurRowIndex][col - 1]) {
-	                	dp[dpCurRowIndex][col] = dp[dpPreRowIndex][col] + data[row][col];
-	                }
-	                else {
-	                	dp[dpCurRowIndex][col] = dp[dpCurRowIndex][col - 1] + data[row][col];
-	                }
-	            }
-	        }
+		for (int row = 0; row < data.length; row++){
+			dpCurRowIndex = row & 1;
+			dpPreRowIndex = 1 - dpCurRowIndex;
+			for (int col = 0; col < data[0].length; col++) {
+				if (col == 0) {
+					dp[dpCurRowIndex][col] = dp[dpPreRowIndex][col] + data[row][col];
+				}
+				else {
+				    if (dp[dpPreRowIndex][col] >= dp[dpCurRowIndex][col - 1]) {
+				    	dp[dpCurRowIndex][col] = dp[dpPreRowIndex][col] + data[row][col];
+				    }
+				    else {
+				    	dp[dpCurRowIndex][col] = dp[dpCurRowIndex][col - 1] + data[row][col];
+				    }
+			    }
+			}
 	    }
-	    return dp[(data.length - 1) & 1][data[0].length - 1];
+		return dp[(data.length - 1) & 1][data[0].length - 1];
 	}
 
 	//方法二：有向图的遍历（广度优先，可再剪枝进行优化）
@@ -71,21 +71,21 @@ public class Java47_MaxValueOfGifts {
 	}
 	
     public static class Node{
-        int row;
-        int col;
-        int sum;
-        public Node (int r, int c, int s) {
-            row = r; col = c; sum = s;
-        }
+		int row;
+		int col;
+		int sum;
+		public Node (int r, int c, int s) {
+		    row = r; col = c; sum = s;
+		}
     }
     
     public static void main(String[] args){
-        int[][] data = {
-                {1, 10, 3, 8},
-                {12, 2, 9, 6},
-                {5, 7, 4, 11},
-                {3, 7, 16, 5}};
-        System.out.println(getMaxVaule(data));
-        System.out.println(getMaxVaule2(data));
+		int[][] data = {
+		        {1, 10, 3, 8},
+		        {12, 2, 9, 6},
+		        {5, 7, 4, 11},
+		        {3, 7, 16, 5}};
+		System.out.println(getMaxVaule(data));
+		System.out.println(getMaxVaule2(data));
     }
 }
