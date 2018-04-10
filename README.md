@@ -1,6 +1,5 @@
 # CodingInterviews
-## Coding Interviews in Java
-## 《剑指Offer》第二版Java实现
+## Coding Interviews in Java  《剑指Offer》第二版Java实现
 ## 目录
 
 - [一、面试的流程](#一、面试的流程)
