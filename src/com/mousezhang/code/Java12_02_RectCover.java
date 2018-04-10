@@ -11,7 +11,10 @@ package com.mousezhang.code;
 
 public class Java12_02_RectCover {
 	public int RectCover(int target) {
-		if (target <= 1){
+		if (target <= 0) {
+			return 0;
+		}
+		if (target == 1){
 			return 1;
 		}
 		if (target * 2 == 2) {
